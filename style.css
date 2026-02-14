@@ -8,7 +8,7 @@ nav {
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 .logo-container { display: flex; align-items: center; text-decoration: none; gap: 12px; }
-.logo-img { width: 80px; height: 80px; object-fit: contain; border-radius: 10px; }
+.logo-img { width: 50px; height: 50px; object-fit: contain; border-radius: 10px; }
 .logo-text { font-size: 26px; font-weight: 800; color: #d3b325; letter-spacing: 1px; }
 
 nav ul { display: flex; list-style: none; }
@@ -78,5 +78,6 @@ section { padding: 90px 8%; }
     background: #25d366; color: white; border-radius: 50%; display: flex;
     align-items: center; justify-content: center; font-size: 30px; z-index: 2000;
 }
+
 
 footer { text-align: center; padding: 40px; background: #f4f7f6; color: #888; }
