@@ -81,3 +81,96 @@ section { padding: 90px 8%; }
 
 
 footer { text-align: center; padding: 40px; background: #f4f7f6; color: #888; }
+/* --- Mobile Responsive Fixes --- */
+
+@media (max-width: 768px) {
+    /* Navigation සකස් කිරීම */
+    nav {
+        flex-direction: column;
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    /* Hero Section එකේ අකුරු කුඩා කිරීම */
+    header h1 {
+        font-size: 2.2rem;
+        padding: 0 15px;
+    }
+
+    header p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    /* Section පරතරය අඩු කිරීම */
+    section {
+        padding: 50px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    /* About Us section එක පිළිවෙලට සැකසීම */
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about-image img {
+        box-shadow: 10px 10px 0px rgba(211, 179, 37, 0.1);
+    }
+
+    .about-features {
+        grid-template-columns: 1fr; /* Feature boxes එක පෙලට */
+        text-align: left;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    /* Contact Section එකේ grid එක සැකසීම */
+    .contact-box {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+
+    /* WhatsApp Float Button එක කුඩා කිරීම */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+}
+
+/* ඉතා කුඩා screen සඳහා (e.g. iPhone SE) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .vehicle-grid {
+        grid-template-columns: 1fr; /* එක පේලියට එක වාහනය බැගින් */
+    }
+}
+
